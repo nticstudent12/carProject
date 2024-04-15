@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--the externel library for animations-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="userhome.css">
+</head>
+<body class="body">
+<div class="container">
+
+ <nav id="nav" style="position: sticky;">
+
+    <div  class="logo">
+        <p><span >D</span>zC<span>a</span>rs</p>
+        <img id="brand" style="display: none;" src="imgage/pngtree-sport-car-logo-icon-template-illustration-engine-company-vector-vector-png-image_44986598.jpg   "" alt="">
+        
+    </div>
+
+    <div class="moon" style="cursor: pointer;" ><img  src="imgage/moon_12225673.png" alt=""></div>
+    
+     <ul  id="ul"> 
+      <li class="navel"  id="b"><a class="ula" href="" onclick="window.location.reload" >Home</a></li>
+      <li class="navel" id="a"><a class="ula" href="#popular">Cars List</a></li>
+      <li class="navel" id="c"><a class="ula" href="#test">Testimonials</a></li>
+      <li class="navel" id="d"><a class="ula" href="#contact">Contact us </a></li>
+      <li class="navel" id="e"><a class="ula" href="slaleYourcar.html">Sale Your car</a></li>
+
+
+        <div  class="apear" style="cursor: pointer;"  id="humberger"  onclick="sidebar()">
+            <a ><svg id="str" fill="black" height="48" viewBox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 24C22.5 23.1716 23.1716 22.5 24 22.5H40C40.8284 22.5 41.5 23.1716 41.5 24C41.5 24.8284 40.8284 25.5 40 25.5H24C23.1716 25.5 22.5 24.8284 22.5 24Z" fill="black"/><path d="M22.5 32C22.5 31.1716 23.1716 30.5 24 30.5H40C40.8284 30.5 41.5 31.1716 41.5 32C41.5 32.8284 40.8284 33.5 40 33.5H24C23.1716 33.5 22.5 32.8284 22.5 32Z" fill="black"/><path d="M24 38.5C23.1716 38.5 22.5 39.1716 22.5 40C22.5 40.8284 23.1716 41.5 24 41.5H40C40.8284 41.5 41.5 40.8284 41.5 40C41.5 39.1716 40.8284 38.5 40 38.5H24Z" fill="black"/></svg></a>
+        </div>
+
+      </ul>
+      
+ </nav>
+
+
+
+
+
+
+
+
+
+   <div class="main">
+    <div class="description"><h1>Find Your Best Car</h1></div>
+    <a class="Explore" style="text-decoration: none;" href="#popular">Explore Now !</a>
+   </div>
+
+   
+   
+   <div class="filter" id="popular">
+      <h1 class="title" data-aos="fade-down">Popular Categories</h1>
+        <div class="divider" data-aos="fade-left"></div>
+      <div class="categories">
+        <div class="types" data-aos="fade-right" onclick="filterCars('all')">All</div>
+        <div class="types" data-aos="fade-right" onclick="filterCars('Suv')">Suv</div>
+        <div class="types" data-aos="fade-right" onclick="filterCars('Sedan')">Sedan</div>
+        <div class="types" data-aos="fade-right" onclick="filterCars('Compacte')">Compacte</div>
+        <div class="types" data-aos="fade-right" onclick="filterCars('Van')">Van</div>
+        <div class="types" data-aos="fade-right" onclick="filterCars('Sport')">Sport</div>
+      </div>
+       
+      <div class="searchFilter">
+        <input type="text" id="year" placeholder="enter year">
+        <input type="text" id="price" placeholder="enter the estimeted price">
+        <div id="search">Search</div>
+      </div>
+
+      <div class="carsCards">
+        <!--we will create the carCards using js-->
+        
+        
+        
+      </div>
+
+   </div>
+
+   <div class="backTop " data-aos="fade-down">↑</div>
+
+ 
+ 
+</div> 
+
+
+
+<h1 class="title" data-aos="fade-down">Testimonials</h1> 
+<div class="divider" data-aos="fade-right"></div>
+<div class="testimonials" id="test">
+  
+ 
+  <br>
+  <div class="cardcontainer">
+  <div class="carte " data-aos="fade-up" >
+    <div class="header">
+      <img src="imgage/avatar_1.jpg" class="image">
+      <div>
+        <div class="stars">
+          <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+          </svg>
+          <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+          </svg>
+          <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+          </svg>
+          <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+          </svg>
+          <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+          </svg>
+        </div>
+        <p class="name">John Doe</p>
+      </div>
+    </div>
+
+    <p class="message">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente est ad sequi laudantium amet eum, accusamus molestiae temporibus consequuntur inventore ipsum et beatae!
+    </p>
+</div>
+
+<div class="carte " data-aos="fade-up">
+  <div class="header">
+    <img class="image" src="imgage/avatar_2.jpg">
+    <div>
+      <div class="stars">
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+        </svg>
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+        </svg>
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+        </svg>
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+        </svg>
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+        </svg>
+      </div>
+      <p class="name">Naithen olivera</p>
+    </div>
+  </div>
+
+  <p class="message">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo ducimus eveniet assumenda rerum repellendus. Ipsam necessitatibus molestias repellat, obcaecati doloribus accusantium libero? Alias saepe tempore accusamus reprehenderit ratione excepturi dolorem in, harum autem sunt fugit?
+  </p>
+</div>
+
+<div class="carte " data-aos="fade-up">
+  <div class="header">
+    <img src="imgage/avatar_3.jpg" class="image">
+    <div>
+      <div class="stars">
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+        </svg>
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+        </svg>
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+        </svg>
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+        </svg>
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+        </svg>
+      </div>
+      <p class="name">Francesco Mattia</p>
+    </div>
+  </div>
+
+  <p class="message">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facilis quas recusandae temporibus amet veritatis repellendus magnam voluptate harum explicabo praesentium, iste, ad repudiandae vel?
+  </p>
+</div>
+  </div>
+</div>
+
+
+<h1 class="title " id="contact" data-aos="fade-down">Contact Us</h1>
+<div class="divider" data-aos="fade-left"></div>
+<form class="form " data-aos="fade-down">
+    
+  <div class="flex ">
+      <label>
+          <input required="" placeholder="" type="text" class="input">
+          <span>first name</span>
+      </label>
+
+      <label>
+          <input required="" placeholder="" type="text" class="input">
+          <span>last name</span>
+      </label>
+  </div>  
+          
+  <label>
+      <input required="" placeholder="" type="email" class="input">
+      <span>email</span>
+  </label> 
+      
+  <label>
+      <input required="" type="tel" placeholder="" class="input">
+      <span>phone number</span>
+  </label>
+  <label>
+      <textarea required=""" placeholder="" class="input01"></textarea>
+      <span>message</span>
+  </label>
+  
+  <button class="fancy" href="#">
+    
+    <span class="text" >submit</span>
+    
+  </button>
+</form>
+
+
+
+
+<!--the footer -->
+    
+<div class="foot  " id="foot">
+  
+  All right reserved for DzCars
+    <div class="parent">
+      <!--my social media acount -->
+    <a href="">
+      <div class="child child-1">
+        <button class="button btn-1" >
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#1e90ff"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+      </button>
+      </div> 
+    </a>
+  
+    <a href="https://www.instagram.com/_abdelldjalil/">
+      <div class="child child-2" >
+        <button class="button btn-2" >
+      <svg  xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#ff00ff"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></button>
+      </div>
+    </a>
+  
+    <a href="https://www.facebook.com/abdeldjalil.barca.52/">
+      <div class="child child-4">
+        <button class="button btn-4">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" fill="#4267B2"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></button>
+      </div>
+      </div>
+    </a>
+  
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="userhome.js"></script>
+<!--the inistialiston for the library-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

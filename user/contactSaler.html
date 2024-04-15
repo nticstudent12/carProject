@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+body{
+      font-family: "Kodchasan", sans-serif;
+     height: 100vh;
+      background-color: #eee;
+      display: flex;
+}
+@media screen and (min-width: 768px) {
+  body{
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root{
+    --primary-color: rgb(221 171 171);
+    --secendery-color:#847777;
+    --third-color:white;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  margin:10px auto;
+  gap: 10px;
+  max-width: 350px;
+  height: fit-content;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color:var(--primary-color)
+}
+
+
+
+.message {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 24px;
+}
+
+.signin {
+  text-align: center;
+}
+
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+  margin-right: 20px;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: var(--secendery-color);
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .7s ease;
+  text-decoration: none;
+  text-align: center;
+
+  
+ 
+ 
+}
+
+.submit:hover {
+    opacity: .9;
+    scale: 1.1;
+    
+}
+
+    </style>
+</head>
+<body>
+    
+    <form class="form">
+        <p class="title">Contact the car owner</p>
+        <p class="message">after filling this form an admin will contact you. </p>
+            <div class="flex">
+            <label>
+                <input required="" placeholder="" type="text" class="input">
+                <span>Firstname</span>
+            </label>
+    
+            <label>
+                <input required="" placeholder="" type="text" class="input">
+                <span>Lastname</span>
+            </label>
+        </div>  
+                
+        <label>
+            <input required="" placeholder="" type="email" class="input">
+            <span>Email</span>
+        </label> 
+                     
+        <label>
+            <input required="" placeholder="" class="input">
+            <span>phone number</span>
+        </label> 
+
+        <label>
+            <input required="" placeholder="" type="password" class="input">
+            <span>Password</span>
+        </label>
+        <label>
+            <input required="" placeholder="" type="password" class="input">
+            <span>Advirtisment Number</span>
+        </label>
+        <a class="submit" href="userhome.html">Submit</a>
+       
+    </form>
+</body>
+</html>

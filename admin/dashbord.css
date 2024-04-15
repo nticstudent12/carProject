@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: rgb(221 171 171);
+    --secendery-color:#847777;
+    --third-color:white;
+}
+body{
+   display: flex;overflow: auto;
+    font-family: "Kodchasan", sans-serif;
+    background-color: #eee;
+ 
+   
+  
+}
+
+
+.hide{
+    display: none;
+}
+
+.left{
+    height: 100vh;
+    z-index: 3;
+    position: fixed;
+    width: 15%;
+    background-color:var(--primary-color);
+  
+    margin-right: 0;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    
+} 
+.right{
+    width: 85%;
+    z-index: 2;
+    height: 100%;
+    background-color:#eee;
+  
+    margin-left: 15%;
+    position: sticky;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    box-shadow:
+0 6px 6px rgba(0,0,0,0.2);
+    background-color: #eeeeee;
+    display: flex;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.logo {
+    margin-bottom: 100px;
+}
+h1{
+    margin-left: 20px;
+}
+.care{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.card{
+    background-color: white;
+    width:20%;
+    border-radius: 1px;
+    box-shadow:
+    0 6px 6px rgba(0,0,0,0.2);
+    height: 130px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.card::before{
+    content: '';
+    width: 5px;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    position: absolute;
+    height: 100%;
+}
+
+.side-ico img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.side{
+    display: flex;
+   align-items: center;
+   margin-bottom: 30px;
+   justify-content: space-evenly;
+   gap: 14px;
+}
+
+.side img{
+    height: 30px;
+    width: 30px;
+}
+
+table{
+    margin-left:20px;
+    margin-top: 30px;
+    
+
+    text-align: center;
+    
+}
+     
+       
+th{
+    padding: 10px;
+    background-color: rgb(221 171 171 / 43%);
+    border-radius: 10px;
+   
+}
+td{
+    padding: 10px;
+}
+
+td input{
+    outline: none;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #eee;
+    padding: 10px;
+
+}
+tr{
+    width: 300px;
+}
+td img{
+   
+    width: 30px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+     .addName{
+        width: 500px;
+        height: 400px;
+        background-color: rd;
+        border: 1px solid black;
+       align-self: center;
+        z-index: 10;
+     }
+    @media screen and (max-width: 768px) {
+        .right{
+            width: 100vw;
+            margin-left: 0;
+        }.care{
+            flex-direction: column;
+            gap: 30px;
+        }.card{
+            width: 50%;
+        }
+      
+        body{
+            height:fit-content;
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            background-color: #eeeeee;
+
+        }
+        nav{
+            width: 100vw;
+        }
+        .left{
+            display: none;
+        }
+     };
+     
